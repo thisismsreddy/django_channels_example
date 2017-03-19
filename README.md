@@ -23,6 +23,7 @@ create virtual-environment
 	$ pip install -r requirement.txt
 
 django-chanels requare to run redis server my case I am running redis server in a docker 
+with port forwording to localhost you can configure this is settings
 
 	$ docker run --name some-redis -p 6379:6379 --restart=always -d redis
 	$ python manage.py makemigrations
